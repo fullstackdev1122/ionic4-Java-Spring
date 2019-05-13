@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Message Box</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+  <ion-item>
+    <ion-label position="stacked">To: {{visitor.v_name}}</ion-label>
+    <ion-textarea [(ngModel)]="message" placeholder="I am about to go."></ion-textarea>
+  </ion-item>
+  <ion-button expand="block" (click)="send()">Send</ion-button>
+</ion-content>

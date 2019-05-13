@@ -1,0 +1,15 @@
+app:
+  secret: the_secret
+  token-validity-in-seconds: 2592000
+
+spring:
+  mvc:
+    favicon:
+      enabled: false
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  resources:
+    add-mappings: false
+index:
+  message: Hello, How are you?
